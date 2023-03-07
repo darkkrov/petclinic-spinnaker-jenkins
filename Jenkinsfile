@@ -18,6 +18,7 @@ pipeline {
             post {
                 always {
                     // junit 'target/surefire-reports/*.xml'
+                    echo 'we skip test results publishing.'
                 }
             }
         }
