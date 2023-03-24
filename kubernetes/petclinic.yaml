@@ -6,15 +6,15 @@ spec:
   selector:
     matchLabels:
       app: petclinic
-  replicas: 1 
-  template: 
+  replicas: 1
+  template:
     metadata:
       labels:
         app: petclinic
     spec:
       containers:
       - name: petclinic
-        image: ibuchh/petclinic-spinnaker-jenkins
+        image: og220/aws-ci
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
@@ -32,4 +32,3 @@ spec:
     protocol: TCP
     port: 80
     targetPort: 8080
-
